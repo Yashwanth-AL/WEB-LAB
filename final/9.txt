@@ -43,8 +43,8 @@
 
         var userIdRegex = /^[a-zA-Z0-9]{5,12}$/;
         var nameRegex = /^[a-zA-Z ]{15,}$/;
-        var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$/;
-        var emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+        var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (!userIdRegex.test(userId)) {
           alert("User ID must be between 5 to 12 characters and alphanumeric.");
